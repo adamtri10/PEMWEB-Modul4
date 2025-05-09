@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript dari URL Lodash - Adamtri</title>
+</head>
+<body>
+    <h1>Selamat Datang!</h1>
+    <p id="demo">Ini adalah paragraf awal.</p>
+
+    <!-- Tambahkan Lodash dari CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+    <script>
+        // Array kata-kata
+        const kata = ["Teks", "ini", "dibuat", "oleh", "Lodash"];
+
+        // Gabungkan array jadi string dengan spasi
+        const hasil = _.join(kata, ' ');
+
+        // Tampilkan hasil ke elemen HTML
+        document.getElementById("demo").textContent = hasil;
+    </script>
+</body>
+</html>
